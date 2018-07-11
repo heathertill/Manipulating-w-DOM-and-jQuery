@@ -1,5 +1,4 @@
 // #1
-
 document.addEventListener('DOMContentLoaded', function () {
     let btn = document.createElement('button');
     let text = document.createTextNode('Click Me');
@@ -7,7 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     num1.appendChild(btn);
     btn.addEventListener('click', function () {
         alert('Thank you for clicking the button!!')
+        
     })
+    
+    
     // #2
     textBox.placeholder = 'Type your message here'
     textBox.name = 'name'
@@ -22,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     num3.addEventListener('mouseout', function () {
         document.getElementById('num3').style.background = 'transparent'
+        
     })
 
     // #4
@@ -38,14 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         paragraph.style.color = randomColor();
     })
-
     let spanButton = document.createElement('input');
     spanButton.id = 'spanButton';
     spanButton.type = 'submit';
     spanButton.value = 'Click Me, Click Me!!!';
     num5.appendChild(spanButton);
+    
 
-
+    // #5
     function newSpan() {
         let divSpan = document.createElement('span');
         let spanText = document.createTextNode('Heather');
@@ -54,26 +57,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     spanButton.addEventListener('click', newSpan)
 
+    // #6
     let friends = ['Margaret', 'Heather', 'Gina', 'Kristina', 'Sharon', 'Jenifer', 'Tonya', 'Jennifer', 'Beth', 'Tina'];
-
-
-
+    
     function newLi() {
-       
-        for (i = 0; i < friends.length; ++i);
-        let ulNum6 = document.createElement('ul');
+        for (i = 0; i < friends.length; i++) {
         let li = document.createElement('li');
         let liText = document.createTextNode(friends[i]);
         ulNum6.appendChild(li);
         li.appendChild(liText);
-        let ulInput = document.createElement('input');
-        let friendLi = document.createTextNode(liText);
-        num6.appendChild(ulInput);
-        ulInput.appendChild(friendLi);
-        console.log(friends[1])
+        }
     }
     ulInput.addEventListener('click', newLi)
-
-
 })
 
