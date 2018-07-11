@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // #4
     let paragraph = document.createElement('p');
     paragraph.id = 'num4Paragraph';
-    let paraTest = document.createTextNode('Two roads diverged in a wood, and I- I took the one less traveled by, And that has made all the difference. Robert Frost')
+    let paraText = document.createTextNode('Two roads diverged in a wood, and I- I took the one less traveled by, And that has made all the difference. Robert Frost')
     num4.appendChild(paragraph);
-    paragraph.appendChild(paraTest);
+    paragraph.appendChild(paraText);
 
     num4.addEventListener('click', function () {
         function randomColor() {
