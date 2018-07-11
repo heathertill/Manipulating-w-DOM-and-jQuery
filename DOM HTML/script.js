@@ -9,12 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
         
     })
     
-    
     // #2
     textBox.placeholder = 'Type your message here'
-    textBox.name = 'name'
     txtBtn.addEventListener('click', function () {
-        textInput = document.querySelector('textarea[name="name"]').value;
+        textInput = document.querySelector('#textBox').value;
         alert(textInput);
     })
 
